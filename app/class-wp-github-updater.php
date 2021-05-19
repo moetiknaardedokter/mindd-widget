@@ -1,5 +1,6 @@
 <?php
 namespace MINDD\App;
+use \stdClass;
 /**
  *
  *

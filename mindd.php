@@ -8,7 +8,7 @@
  * Domain Path:       /languages
  * Requires at least: 5.0
  * Requires PHP:      7.1
- * Version:           0.1.0
+ * Version:           0.2.0
  *
  * @package         Mindd
  */
