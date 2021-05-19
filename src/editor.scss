@@ -1,0 +1,95 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-mindd-mindd {
+  padding-bottom: 10px;
+}
+
+
+.mindd-header {
+  background: rgb(248, 249, 250);
+  border-bottom: 1px solid rgba(96, 96, 106, 0.25);
+  color: #333;
+}
+
+.mindd-header-branding-name,
+.mindd-header-branding-phone {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.mindd-header-branding-phone {
+  color: rgb(0, 178, 255);
+}
+
+.mindd-pre-body-terms {
+  color: rgb(96, 96, 106);
+  cursor: pointer;
+  font-size: 0.75em;
+  font-style: italic;
+  margin-right: 10px;
+  opacity: 0.78;
+  text-align: left;
+}
+
+.mindd-pre-body-welcome {
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.mindd-question-card {
+  background-color: #fff;
+  border-radius: 0 10px 25px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 4px 25px;
+  color: rgb(96, 96, 106);
+  padding: 30px;
+  text-align: left;
+  max-height: 800px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0 10px 10px;
+}
+
+button {
+  border: 1px solid rgb(0, 178, 255);
+  padding: 10px 22px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: initial;
+  text-transform: initial;
+  transition: initial;
+  font-size: initial;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.mindd-question-gender {
+  .mindd-question-gender-m {
+	border-radius: 10px 0 0 10px;
+	background: rgb(0, 178, 255);
+	border-color: rgb(0, 178, 255);
+	color: rgb(255, 255, 255);
+  }
+
+  .mindd-question-gender-f {
+	border-radius: 0 10px 10px 0;
+  }
+}
+
+.mindd-question-birthday {
+  padding-bottom: 10px;
+
+  div {
+	display: inline-block;
+	font-size: inherit;
+	border-radius: 5px;
+	border: 1px solid rgb(0, 178, 255);
+	padding: 0.1rem 0.5rem;
+	margin-right: 0.75rem;
+	background: transparent;
+  }
+
+}

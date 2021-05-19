@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "mindd/mindd",
+	"title": "Moet ik naar de Dokter - zelf triage",
+	"category": "widgets",
+	"icon": "rest-api",
+	"description": "Installeer de zelf triage op uw eigen site.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "mindd",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
