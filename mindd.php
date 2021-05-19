@@ -50,7 +50,7 @@ add_action( 'plugins_loaded', function () {
 
 	$config = array(
 		'slug'               => plugin_basename( __FILE__ ),
-		'proper_folder_name' => 'mindd',
+		'proper_folder_name' => 'mindd-build',
 		'api_url'            => 'https://api.github.com/repos/webfundament/mindd-plugin-build',
 		'raw_url'            => 'https://raw.github.com/webfundament/mindd-plugin-build/main',
 		'github_url'         => 'https://github.com/webfundament/mindd-plugin-build',
