@@ -19,7 +19,7 @@ use MINDD\App\WP_GitHub_Updater;
 
 //phpcs:disable PEAR.Functions
 
-define( 'MINDD_VERSION', '0.2.0' );
+define( 'MINDD_VERSION', '0.2.1' );
 define( 'MINDD_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MINDD_APP_DIR', MINDD_DIR . 'app' . DIRECTORY_SEPARATOR );
 define( 'MINDD_URL', plugin_dir_url( __FILE__ ) );
