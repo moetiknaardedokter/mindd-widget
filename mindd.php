@@ -59,7 +59,7 @@ add_action( 'plugins_loaded', function () {
 		'requires'           => '5.0',
 		'tested'             => '5.7.2',
 		'readme'             => 'README.md',
-		'access_token'       => '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',
+		'access_token'       => '',
 	);
 
 	new WP_GitHub_Updater( $config );
