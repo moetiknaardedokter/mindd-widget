@@ -28,8 +28,7 @@ class Admin {
 	 * Run on activation.
 	 *
 	 * @param string $plugin Path to the plugin file relative to the plugins directory.
-	 * @param bool   $network_wide Whether to enable the plugin for all sites in the network
-	 *                                         or just the current site. Multisite only. Default false.
+	 * @param bool   $network_wide Whether to enable the plugin for all sites in the network or just the current site. Multisite only. Default false.
 	 */
 	public static function activate( string $plugin, $network_wide = false ) {
 		// do stuff.
@@ -54,10 +53,7 @@ class Admin {
 	 *
 	 * @return string
 	 */
-	public static function render_block( $atts = array() ) {
-		$arrggs = func_get_args();
-
-
+	public static function render_block( array $atts = array() ) {
 		return self::render( $atts );
 	}
 
@@ -86,6 +82,21 @@ class Admin {
 			'branding:phone_label'   => '',
 			'branding:phone_number'  => '',
 		);
+
+		// these keys might be called different in the array we receive.
+		$sanitize_keys = array(
+			'branding:termsOfUseUrl' => 'branding_termsOfUseUrl',
+			'branding:layout'        => 'branding_layout',
+			'branding:name'          => 'branding_name',
+			'branding:phone_label'   => 'branding_phone_label',
+			'branding:phone_number'  => 'branding_phone_number',
+		);
+		foreach ( $sanitize_keys as $sanitize_valid_key => $search_key ) {
+			if ( isset( $atts[ $search_key ] ) ) {
+				$atts[ $sanitize_valid_key ] = $atts[ $search_key ];
+				unset( $atts[ $search_key ] );
+			}
+		}
 
 		$atts = shortcode_atts( $defaults_attr, $atts );
 

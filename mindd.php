@@ -8,7 +8,7 @@
  * Domain Path:       /languages
  * Requires at least: 5.0
  * Requires PHP:      7.1
- * Version:           0.2.1
+ * Version:           0.2.0
  *
  * @package         Mindd
  */
@@ -19,7 +19,7 @@ use MINDD\App\WP_GitHub_Updater;
 
 //phpcs:disable PEAR.Functions
 
-define( 'MINDD_VERSION', '0.2.1' );
+define( 'MINDD_VERSION', '0.2.0' );
 define( 'MINDD_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MINDD_APP_DIR', MINDD_DIR . 'app' . DIRECTORY_SEPARATOR );
 define( 'MINDD_URL', plugin_dir_url( __FILE__ ) );
@@ -46,11 +46,9 @@ add_action( 'plugins_loaded', function () {
 		return; // Only configure on admin pages.
 	}
 
-	define( 'WP_GITHUB_FORCE_UPDATE', true ); //phpcs:ignore  WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedConstantFound
-
 	$config = array(
 		'slug'               => plugin_basename( __FILE__ ),
-		'proper_folder_name' => 'mindd-build',
+		'proper_folder_name' => 'mindd',
 		'api_url'            => 'https://api.github.com/repos/webfundament/mindd-plugin-build',
 		'raw_url'            => 'https://raw.github.com/webfundament/mindd-plugin-build/main',
 		'github_url'         => 'https://github.com/webfundament/mindd-plugin-build',

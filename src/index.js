@@ -36,16 +36,16 @@ registerBlockType('mindd/mindd', {
 		accent_color: {type: 'string', default: '#ff00ff'},
 		widget_background: {type: 'string', default: '#f0ff00'},
 		widget_foreground: {type: 'string', default: '#0000ff'},
-		welcome_text: {type: 'string', default: __('**Voordat u belt, doorloop eerst deze vragen.**', 'mindd')},
+		welcome_text: {type: 'string', default: __('Voordat u belt, doorloop eerst deze vragen.', 'mindd')},
 		// open: false,
 		// modalDisplayMode: '',
 		// widget_showWelcomeText: false,
-		// QuestionWhatGender: false,
-		// branding_termsOfUseUrl: '',
 		// branding_layout: 'geen idee',
-		// branding_name: '',
-		// branding_phone_label: '',
-		// branding_phone_number: '',
+		QuestionWhatGender: {type: 'booleon', default: true},
+		branding_termsOfUseUrl:  {type: 'string', default: ''},
+		branding_name: {type: 'string', default: __('branding_name',  'mindd')},
+		branding_phone_label: {type: 'string', default: __('branding_phone_label',  'mindd')},
+		branding_phone_number: {type: 'string', default: ''},
 
 		/**
 		 * OLD
