@@ -41,7 +41,6 @@ registerBlockType('mindd/mindd', {
 		// modalDisplayMode: '',
 		// widget_showWelcomeText: false,
 		// branding_layout: 'geen idee',
-		QuestionWhatGender: {type: 'booleon', default: true},
 		branding_termsOfUseUrl:  {type: 'string', default: ''},
 		branding_name: {type: 'string', default: __('branding_name',  'mindd')},
 		branding_phone_label: {type: 'string', default: __('branding_phone_label',  'mindd')},

@@ -51,30 +51,6 @@ export default function SidebarControls({attributes, setAttributes, setState}) {
 								/>
 							</BaseControl>
 						)}
-
-						<BaseControl
-							id='mindd-controlls-branding_url'
-							label={__('branding_termsOfUseUrl', 'mindd')}
-						>
-							<input
-								type='url'
-								value={attributes.branding_termsOfUseUrl}
-								onChange={(event) => {
-									setAttributes({branding_termsOfUseUrl: event.target.value});
-								}}
-								placeholder='https://'
-							/>
-						</BaseControl>
-
-						<ToggleControl
-							label={ !! attributes.QuestionWhatGender ?
-								__( 'Showing gender question', 'mindd' ) :
-								__( 'Hiding gender question', 'mindd' )
-							}
-							checked={ !! attributes.QuestionWhatGender }
-							onChange={ () => setAttributes( { QuestionWhatGender: ! attributes.QuestionWhatGender } ) }
-						/>
-
 					</PanelBody>
 					<PanelColorSettings // Element Tag for Gutenberg standard colour selector
 						title={__('Colors', 'mindd')}

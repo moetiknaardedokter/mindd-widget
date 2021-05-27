@@ -23,21 +23,15 @@ export default function BlockRender({attributes, setAttributes}) {
 					</div>
 				</div>
 				<div className='mindd-pre-body'>
-					{attributes.branding_termsOfUseUrl && (
-						<div className='mindd-pre-body-terms'><a href={attributes.branding_termsOfUseUrl}>Gebruikersvoorwaarden</a></div>
-
-					)}
 					<div className='mindd-pre-body-welcome'>{attributes.welcome_text}</div>
 				</div>
-				{attributes.QuestionWhatGender && (
-					<div className='mindd-question-card'>
-						<div className='mindd-question-title'>{__('Bent u een man of een vrouw?', 'mindd')}</div>
-						<div className='mindd-question-gender'>
-							<button className='mindd-question-gender-m'>{__('Man', 'mindd')}</button>
-							<button className='mindd-question-gender-f'>{__('Vrouw', 'mindd')}</button>
-						</div>
+				<div className='mindd-question-card'>
+					<div className='mindd-question-title'>{__('Bent u een man of een vrouw?', 'mindd')}</div>
+					<div className='mindd-question-gender'>
+						<button className='mindd-question-gender-m'>{__('Man', 'mindd')}</button>
+						<button className='mindd-question-gender-f'>{__('Vrouw', 'mindd')}</button>
 					</div>
-				)}
+				</div>
 				<div className='mindd-question-card'>
 					<div className='mindd-question-title'>{__('Wat is uw geboortedatum?', 'mindd')}</div>
 					<div className='mindd-question-birthday'>
