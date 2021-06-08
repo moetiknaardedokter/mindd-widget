@@ -36,7 +36,7 @@ if ( empty( $atts['api_key'] ) ) :
 	?>
 	<div class="<?php echo esc_attr( $atts['className'] ); ?> no-api-key">
 		<h2><?php esc_html_e( 'Missing API key', 'mindd' ); ?></h2>
-		<div class="message"><?php esc_html_e( 'No api key is set, TODO a descent message and link to the docs', 'mindd' ); ?></div>
+		<div class="message"><?php esc_html_e( 'Er is geen API-key opgegeven. De widget heeft een API-Key nodig.', 'mindd' ); ?></div>
 	</div>
 	<?php
 	return;
@@ -51,7 +51,6 @@ endif;
 				ApiKey: '<?php echo esc_js( $atts['api_key'] ); ?>',
 				target: '#mindd_widget_embedded',
 				type: 'widget',
-				accent_color: '<?php echo esc_js( $atts['accent_color'] ); ?>',
 				welcome_text: '<?php echo esc_js( $atts['welcome_text'] ); ?>',
 				open: <?php echo esc_js( $atts['open'] ); ?>,
 				modalDisplayMode: '<?php echo esc_js( $atts['modalDisplayMode'] ); ?>',

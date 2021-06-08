@@ -1,10 +1,9 @@
 {
 	"apiVersion": 2,
 	"name": "mindd/mindd",
-	"title": "Moet ik naar de Dokter - zelf triage",
+	"title": "Moet ik naar de Dokter? - zelf triage",
 	"category": "widgets",
-	"icon": "rest-api",
-	"description": "Installeer de zelf triage op uw eigen site.",
+	"description": "Plaats de zelftriage widget van 'Moet ik naar de dokter?' op uw eigen website.",
 	"supports": {
 		"html": false
 	},

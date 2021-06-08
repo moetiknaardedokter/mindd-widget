@@ -1,25 +1,13 @@
-/**
- * Registers a new block provided a unique name and an object defining its behavior.
- *
- * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
- */
+
 import {registerBlockType} from '@wordpress/blocks';
+import { Icon } from '@wordpress/components';
+import {__} from "@wordpress/i18n";
 
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * All files containing `style` keyword are bundled together. The code used
- * gets applied both to the front of your site and to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
-import './style.scss';
-
-/**
- * Internal dependencies
- */
+import minddIcon from './icon';
 import Edit from './edit';
 import save from './save';
-import {__} from "@wordpress/i18n";
+
+import './style.scss';
 
 /**
  * Every block starts by registering a new block type definition.
@@ -31,11 +19,11 @@ registerBlockType('mindd/mindd', {
 	 * @see https://make.wordpress.org/core/2020/11/18/block-api-version-2/
 	 */
 	apiVersion: 2,
+	icon: <Icon icon={ minddIcon } />,
 	attributes: {
 		ApiKey: {type: 'string'},
-		accent_color: {type: 'string', default: '#ff00ff'},
-		widget_background: {type: 'string', default: '#f0ff00'},
-		widget_foreground: {type: 'string', default: '#0000ff'},
+		widget_background: {type: 'string' },
+		widget_foreground: {type: 'string' },
 		welcome_text: {type: 'string', default: __('Voordat u belt, doorloop eerst deze vragen.', 'mindd')},
 		// open: false,
 		// modalDisplayMode: '',

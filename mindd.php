@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name:       Mindd widget
+ * Plugin Name:       Moet ik naar de dokter? – zelftriage widget
  * Plugin URI:        https://moetiknaardedokter.azurewebsites.net/
- * Description:       TODO
+ * Description:       Plaats de zelftriage widget van 'Moet ik naar de dokter?' op uw eigen website.
  * Author:            janw.oostendorp
  * Text Domain:       mindd
  * Domain Path:       /languages
  * Requires at least: 5.0
  * Requires PHP:      7.1
- * Version:           0.2.3
+ * Version:           0.3.0
  *
  * @package         Mindd
  */
@@ -19,7 +19,7 @@ use MINDD\App\WP_GitHub_Updater;
 
 //phpcs:disable PEAR.Functions
 
-define( 'MINDD_VERSION', '0.2.3' );
+define( 'MINDD_VERSION', '0.3.0' );
 define( 'MINDD_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MINDD_APP_DIR', MINDD_DIR . 'app' . DIRECTORY_SEPARATOR );
 define( 'MINDD_URL', plugin_dir_url( __FILE__ ) );
@@ -75,4 +75,4 @@ add_filter( 'plugin_action_links_' . MINDD_NAME, array( '\MINDD\App\Admin', 'set
 
 // add the rest of the hooks & filters.
 add_action( 'init', array( '\MINDD\App\Admin', 'block_init' ) );
-
+add_action( 'init', array( '\MINDD\App\Admin', 'register_shortcode' ) );

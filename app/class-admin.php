@@ -67,8 +67,7 @@ class Admin {
 	public static function render( $atts = array() ) {
 		$defaults_attr = array(
 			'className'              => 'wp-block-mindd-widget',
-			'api_key'                => '0yoc9L4gehf78gP7drXsfxoLu/F6yriH',
-			'accent_color'           => '#16B4AD',
+			'api_key'                => '',
 			'welcome_text'           => __( '**Voordat u belt, doorloop eerst deze vragen.**', 'mindd' ),
 			'open'                   => false,
 			'modalDisplayMode'       => 'full', // dialog or full.
@@ -83,8 +82,9 @@ class Admin {
 			'branding:phone_number'  => '',
 		);
 
-		// these keys might be called different in the array we receive.
+		// These keys might be called different in the array we receive.
 		$sanitize_keys = array(
+			'api_key'                => 'ApiKey',
 			'branding:termsOfUseUrl' => 'branding_termsOfUseUrl',
 			'branding:layout'        => 'branding_layout',
 			'branding:name'          => 'branding_name',
@@ -110,5 +110,13 @@ class Admin {
 
 		return ob_get_clean();
 	}
+
+	/**
+	 * Register shortcode.
+	 */
+	public static function register_shortcode() {
+		add_shortcode( 'mindd', array( self::class, 'render' ) );
+	}
+
 }
 
