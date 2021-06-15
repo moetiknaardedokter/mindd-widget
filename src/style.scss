@@ -5,5 +5,20 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-mindd-mindd {
+[data-minddclass=modal] [data-minddclass=widget],
+.wp-block-mindd-widget #mindd_widget_embedded {
+  button[data-minddclass=basebutton] {
+	border-color: var(--mindd-button-accent);
+  }
+
+  button[data-minddclass=basebutton]:hover,
+  button[data-minddclass=basebutton]:hover:not([disabled]),
+  button[data-minddclass=activebutton]:hover:not([disabled]),
+  button[data-minddclass=activebutton] {
+	background-color: var(--mindd-button-accent);
+  }
+
+  [data-minddclass=activityBack] span {
+	color: var(--mindd-button-accent);
+  }
 }

@@ -29,6 +29,8 @@ if ( is_null( $atts['branding:layout'] ) ) {
 	$atts['branding:layout'] = "'{$atts['branding:layout']}'";
 }
 
+$class_selector = implode( ',', explode( ' ', $atts['className'] ) );
+
 /**
  * Start template
  */
@@ -43,6 +45,12 @@ if ( empty( $atts['api_key'] ) ) :
 endif;
 ?>
 <div class="<?php echo esc_attr( $atts['className'] ); ?>">
+	<style>
+		[data-minddclass="modal"],
+		.<?php echo esc_attr( $class_selector ); ?> {
+			--mindd-button-accent: <?php echo esc_attr( $atts['widget_accent'] ); ?>
+		}
+	</style>
 	<div id="mindd_widget_embedded" style="height:300px;"></div>
 	<script src="https://moetiknaardedokter.azurewebsites.net/embed/index.js" type="text/javascript"></script>
 	<script type="text/javascript">

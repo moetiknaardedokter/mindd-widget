@@ -1,9 +1,9 @@
 === Moet ik naar de Dokter? - zelf triage ===
-Contributors:      janw.oostendorp
+Contributors:      MINDD B.V.
 Tags:              block
 Requires at least: 5.6.0
 Tested up to:      5.7.0
-Stable tag:        0.3.0
+Stable tag:        1.0.0
 Requires PHP:      7.0.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -16,7 +16,7 @@ Installeer de zelf triage op uw eigen site.
 
 Basic usage of the shortcode:
 
-	[mindd api_key=3yWqW/AOwu9Z3SkW7JKJDH2dqjlizoVq]
+	[mindd api_key=AB1CDE/FG2HIJ3KLMN4OPQRS5TUVWXYZ]
 
 Attributes allowed in the shortcode:
 

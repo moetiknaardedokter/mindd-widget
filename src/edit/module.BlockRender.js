@@ -11,6 +11,11 @@ export default function BlockRender({attributes, setAttributes}) {
 				}}
 			>
 
+				<style>{`
+				.wp-block-mindd-mindd {
+					--mindd-button-accent: ${attributes.widget_accent}
+				}`
+				}</style>
 				<div className='mindd-header'>
 					<div className='mindd-header-branding-name'>{attributes.branding_name}</div>
 					<div className='mindd-header-branding-phone'>

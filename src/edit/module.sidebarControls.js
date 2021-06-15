@@ -70,7 +70,12 @@ export default function SidebarControls({attributes, setAttributes, setState}) {
 							{
 								value: attributes.widget_foreground,
 								onChange: (widget_foreground) => setAttributes({widget_foreground}),
-								label: __('Text', 'mindd'),
+								label: __('Algemene Text', 'mindd'),
+							},
+							{
+								value: attributes.widget_accent,
+								onChange: (widget_accent) => setAttributes({widget_accent}),
+								label: __('Accent', 'mindd'),
 							}
 						]}
 					/>

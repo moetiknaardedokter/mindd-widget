@@ -3,12 +3,12 @@
  * Plugin Name:       Moet ik naar de dokter? – zelftriage widget
  * Plugin URI:        https://moetiknaardedokter.azurewebsites.net/
  * Description:       Plaats de zelftriage widget van 'Moet ik naar de dokter?' op uw eigen website.
- * Author:            janw.oostendorp
+ * Author:            MINDD B.V.
  * Text Domain:       mindd
  * Domain Path:       /languages
  * Requires at least: 5.0
  * Requires PHP:      7.1
- * Version:           0.3.0
+ * Version:           1.0.0
  *
  * @package         Mindd
  */
@@ -19,7 +19,7 @@ use MINDD\App\WP_GitHub_Updater;
 
 //phpcs:disable PEAR.Functions
 
-define( 'MINDD_VERSION', '0.3.0' );
+define( 'MINDD_VERSION', '1.0.0' );
 define( 'MINDD_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MINDD_APP_DIR', MINDD_DIR . 'app' . DIRECTORY_SEPARATOR );
 define( 'MINDD_URL', plugin_dir_url( __FILE__ ) );

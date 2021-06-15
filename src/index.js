@@ -22,8 +22,9 @@ registerBlockType('mindd/mindd', {
 	icon: <Icon icon={ minddIcon } />,
 	attributes: {
 		ApiKey: {type: 'string'},
-		widget_background: {type: 'string' },
-		widget_foreground: {type: 'string' },
+		widget_accent: {type: 'string', default: '#00b2ff' }, // a color.
+		widget_background: {type: 'string' }, // a color.
+		widget_foreground: {type: 'string' }, // a color.
 		welcome_text: {type: 'string', default: __('Voordat u belt, doorloop eerst deze vragen.', 'mindd')},
 		// open: false,
 		// modalDisplayMode: '',

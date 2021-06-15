@@ -74,6 +74,7 @@ class Admin {
 			'widget_showWelcomeText' => true,
 			'widget_background'      => 'transparent',
 			'widget_foreground'      => '#fff',
+			'widget_accent'          => '#00b2ff',
 			'QuestionWhatGender'     => null,
 			'branding:termsOfUseUrl' => 'https://www.moetiknaardedokter.nl/gebruiksvoorwaarden/',
 			'branding:layout'        => null, // top or null.
