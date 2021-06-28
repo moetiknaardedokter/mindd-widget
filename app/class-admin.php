@@ -99,7 +99,7 @@ class Admin {
 			}
 		}
 
-		$atts = shortcode_atts( $defaults_attr, $atts );
+		$atts = shortcode_atts( $defaults_attr, $atts, 'mindd' );
 
 		// Check the branding, and display it if set.
 		if ( ! empty( $atts['branding:name'] ) || ! empty( $atts['branding:phone_label'] ) || ! empty( $atts['branding:phone_number'] ) ) {
@@ -120,4 +120,3 @@ class Admin {
 	}
 
 }
-
