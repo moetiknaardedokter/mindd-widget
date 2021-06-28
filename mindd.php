@@ -48,11 +48,11 @@ add_action( 'plugins_loaded', function () {
 
 	$config = array(
 		'slug'               => plugin_basename( __FILE__ ),
-		'proper_folder_name' => 'mindd',
-		'api_url'            => 'https://api.github.com/repos/webfundament/mindd-plugin-build',
-		'raw_url'            => 'https://raw.github.com/webfundament/mindd-plugin-build/main',
-		'github_url'         => 'https://github.com/webfundament/mindd-plugin-build',
-		'zip_url'            => 'https://github.com/webfundament/mindd-plugin-build/archive/main.zip',
+		'proper_folder_name' => 'mindd-widget',
+		'api_url'            => 'https://api.github.com/repos/webfundament/mindd-widget',
+		'raw_url'            => 'https://raw.github.com/webfundament/mindd-widget/main',
+		'github_url'         => 'https://github.com/webfundament/mindd-widget',
+		'zip_url'            => 'https://github.com/webfundament/mindd-widget/raw/main/mindd-widget.zip',
 		'sslverify'          => true,
 		'requires'           => '5.0',
 		'tested'             => '5.7.2',
@@ -71,7 +71,7 @@ add_action( 'plugins_loaded', function () {
 register_activation_hook( __FILE__, array( '\MINDD\App\Admin', 'activate' ) );
 
 // Adds a link to the settings page on the plugin overview.
-add_filter( 'plugin_action_links_' . MINDD_NAME, array( '\MINDD\App\Admin', 'settings_link' ) );
+// add_filter( 'plugin_action_links_' . MINDD_NAME, array( '\MINDD\App\Admin', 'settings_link' ) );
 
 // add the rest of the hooks & filters.
 add_action( 'init', array( '\MINDD\App\Admin', 'block_init' ) );
