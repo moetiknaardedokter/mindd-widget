@@ -4,21 +4,90 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-
-[data-minddclass=modal] [data-minddclass=widget],
+[data-minddclass="modal"] [data-minddclass="widget"],
 .wp-block-mindd-widget #mindd_widget_embedded {
-  button[data-minddclass=basebutton] {
-	border-color: var(--mindd-button-accent);
-  }
+	button[data-minddclass="basebutton"] {
+		border-color: var(--mindd-button-accent);
+	}
 
-  button[data-minddclass=basebutton]:hover,
-  button[data-minddclass=basebutton]:hover:not([disabled]),
-  button[data-minddclass=activebutton]:hover:not([disabled]),
-  button[data-minddclass=activebutton] {
-	background-color: var(--mindd-button-accent);
-  }
+	button[data-minddclass="basebutton"]:hover,
+	button[data-minddclass="basebutton"]:hover:not([disabled]),
+	button[data-minddclass="activebutton"]:hover:not([disabled]),
+	button[data-minddclass="activebutton"] {
+		background-color: var(--mindd-button-accent);
+	}
 
-  [data-minddclass=activityBack] span {
-	color: var(--mindd-button-accent);
-  }
+	[data-minddclass="activitybubble"] {
+		button[data-minddclass="basebutton"] {
+			color: var(--mindd-button-accent);
+			background-color: #fff;
+		}
+		button[data-minddclass="activebutton"] {
+			border-color: var(--mindd-button-accent);
+		}
+	}
+
+	[data-minddclass="activityBack"] span {
+		color: var(--mindd-button-accent);
+	}
+
+	[data-minddclass="activityactions"] {
+		button[data-minddclass="activebutton"] {
+			background-color: var(--mindd-button-accent);
+			border-color: var(--mindd-button-accent);
+		}
+		button[data-minddclass="basebutton"] {
+			border-color: var(--mindd-button-accent);
+		}
+	}
+
+	svg path {
+		fill: var(--mindd-button-accent);
+	}
+
+	[data-minddclass="form"] {
+		input[data-minddclass="input"],
+		input[data-minddclass="inputlarge"],
+		button[data-minddclass="activebutton"] {
+			border-color: var(--mindd-button-accent) !important;
+		}
+
+		button[data-minddclass="activebutton"] {
+			background-color: var(--mindd-button-accent);
+			color: #fff;
+		}
+
+		button[data-minddclass="basebutton"] {
+			color: rgb(158, 158, 158);
+		}
+	}
+
+	[data-minddclass="activitycomplaintwrapper"] {
+		button[data-minddclass="basebutton"] {
+			background-color: #fff;
+
+			svg path {
+				fill: var(--mindd-button-accent);
+			}
+		}
+
+		[data-minddclass="complaint"] {
+			color: var(--mindd-button-accent);
+
+			&:hover {
+				background-color: var(--mindd-button-accent);
+				color: #fff;
+			}
+		}
+
+		.bbCCBf {
+			background-color: var(--mindd-button-accent);
+			color: #fff;
+		}
+	}
+	[data-minddclass="icon"] {
+		[data-minddclass="iconbackground"] {
+			background-color: var(--mindd-button-accent);
+		}
+	}
 }
