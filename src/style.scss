@@ -45,6 +45,12 @@
 		fill: var(--mindd-button-accent);
 	}
 
+	[data-minddclass="minddlogo"] {
+		svg path {
+			fill: rgb(227, 6, 19);
+		}
+	}
+
 	[data-minddclass="form"] {
 		input[data-minddclass="input"],
 		input[data-minddclass="inputlarge"],
