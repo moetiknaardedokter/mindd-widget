@@ -31,8 +31,8 @@ registerBlockType('mindd/mindd', {
 		// widget_showWelcomeText: false,
 		// branding_layout: 'geen idee',
 		branding_termsOfUseUrl:  {type: 'string', default: ''},
-		branding_name: {type: 'string', default: __('branding_name',  'mindd')},
-		branding_phone_label: {type: 'string', default: __('branding_phone_label',  'mindd')},
+		branding_name: {type: 'string', default: __('Praktijk naam',  'mindd')},
+		branding_phone_label: {type: 'string', default: __('Telefoonnummer',  'mindd')},
 		branding_phone_number: {type: 'string', default: ''},
 
 		/**

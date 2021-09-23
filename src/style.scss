@@ -7,42 +7,42 @@
 [data-minddclass="modal"] [data-minddclass="widget"],
 .wp-block-mindd-widget #mindd_widget_embedded {
 	button[data-minddclass="basebutton"] {
-		border-color: var(--mindd-button-accent);
+		border-color: var(--mindd-button-accent, #fd4940);
 	}
 
 	button[data-minddclass="basebutton"]:hover,
 	button[data-minddclass="basebutton"]:hover:not([disabled]),
 	button[data-minddclass="activebutton"]:hover:not([disabled]),
 	button[data-minddclass="activebutton"] {
-		background-color: var(--mindd-button-accent);
+		background-color: var(--mindd-button-accent, #fd4940);
 	}
 
 	[data-minddclass="activitybubble"] {
 		button[data-minddclass="basebutton"] {
-			color: var(--mindd-button-accent);
+			color: var(--mindd-button-accent, #fd4940);
 			background-color: #fff;
 		}
 		button[data-minddclass="activebutton"] {
-			border-color: var(--mindd-button-accent);
+			border-color: var(--mindd-button-accent, #fd4940);
 		}
 	}
 
 	[data-minddclass="activityBack"] span {
-		color: var(--mindd-button-accent);
+		color: var(--mindd-button-accent, #fd4940);
 	}
 
 	[data-minddclass="activityactions"] {
 		button[data-minddclass="activebutton"] {
-			background-color: var(--mindd-button-accent);
-			border-color: var(--mindd-button-accent);
+			background-color: var(--mindd-button-accent, #fd4940);
+			border-color: var(--mindd-button-accent, #fd4940);
 		}
 		button[data-minddclass="basebutton"] {
-			border-color: var(--mindd-button-accent);
+			border-color: var(--mindd-button-accent, #fd4940);
 		}
 	}
 
 	svg path {
-		fill: var(--mindd-button-accent);
+		fill: var(--mindd-button-accent, #fd4940);
 	}
 
 	[data-minddclass="minddlogo"] {
@@ -55,45 +55,51 @@
 		input[data-minddclass="input"],
 		input[data-minddclass="inputlarge"],
 		button[data-minddclass="activebutton"] {
-			border-color: var(--mindd-button-accent) !important;
+			border-color: var(--mindd-button-accent, #fd4940) !important;
 		}
 
 		button[data-minddclass="activebutton"] {
-			background-color: var(--mindd-button-accent);
+			background-color: var(--mindd-button-accent, #fd4940);
 			color: #fff;
 		}
 
 		button[data-minddclass="basebutton"] {
 			color: rgb(158, 158, 158);
 		}
+
+	  input[name="day"],
+	  input[name="month"],
+	  input[name="year"] {
+		width: 5em;
+	  }
 	}
 
-	[data-minddclass="activitycomplaintwrapper"] {
+  [data-minddclass="activitycomplaintwrapper"] {
 		button[data-minddclass="basebutton"] {
 			background-color: #fff;
 
 			svg path {
-				fill: var(--mindd-button-accent);
+				fill: var(--mindd-button-accent, #fd4940);
 			}
 		}
 
 		[data-minddclass="complaint"] {
-			color: var(--mindd-button-accent);
+			color: var(--mindd-button-accent, #fd4940);
 
 			&:hover {
-				background-color: var(--mindd-button-accent);
+				background-color: var(--mindd-button-accent, #fd4940);
 				color: #fff;
 			}
 		}
 
 		.bbCCBf {
-			background-color: var(--mindd-button-accent);
+			background-color: var(--mindd-button-accent, #fd4940);
 			color: #fff;
 		}
 	}
 	[data-minddclass="icon"] {
 		[data-minddclass="iconbackground"] {
-			background-color: var(--mindd-button-accent);
+			background-color: var(--mindd-button-accent, #fd4940);
 		}
 	}
 }

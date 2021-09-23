@@ -8,7 +8,7 @@
  * Domain Path:       /languages
  * Requires at least: 5.0
  * Requires PHP:      7.1
- * Version:           1.1.1
+ * Version:           1.1.2
  *
  * @package         Mindd
  */
@@ -19,7 +19,7 @@ use MINDD\App\WP_GitHub_Updater;
 
 //phpcs:disable PEAR.Functions
 
-define( 'MINDD_VERSION', '1.1.1' );
+define( 'MINDD_VERSION', '1.1.2' );
 define( 'MINDD_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MINDD_APP_DIR', MINDD_DIR . 'app' . DIRECTORY_SEPARATOR );
 define( 'MINDD_URL', plugin_dir_url( __FILE__ ) );
