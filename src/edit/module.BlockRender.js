@@ -1,7 +1,9 @@
 import {useBlockProps} from "@wordpress/block-editor";
 import {__} from "@wordpress/i18n";
+import {ExternalLink} from "@wordpress/components";
 
 export default function BlockRender({attributes, setAttributes}) {
+	const register_url = 'https://www.moetiknaardedokter.nl/informatie-voor-huisartsen/aanvraag-api-key/';
 	return (
 		attributes.ApiKey ?
 			<div {...useBlockProps()}
@@ -54,7 +56,11 @@ export default function BlockRender({attributes, setAttributes}) {
 			:
 			// If API key is not set, probably a overlay is better.
 			<div {...useBlockProps()} >
-				<div>TODO uitleg tekstje voor het krijgen van een API key</div>
+				<div>
+					{__('Om de widget te kunnen gebruiken dient u een geheime sleutel (API-key) in te voeren.', 'mindd')}
+					<br/>
+					<ExternalLink href={register_url}>{__('Hier kunt u een API-key aanvragen.', 'mindd')}</ExternalLink>
+				</div>
 			</div>
 
 	)
